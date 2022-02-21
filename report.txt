@@ -1,0 +1,40 @@
+# Report
+
+## How-to
+
+type `make` to start playing
+by pressing x on the top-left corner can close the game
+type `make clean` can delete the class file
+
+!!!!the insert function has some problem!!!!
+
+## References
+stackoverflow.com
+javatpoint.com
+https://www.tutorialspoint.com/swing/index.htm
+
+ActionEvent
+https://stackoverflow.com/questions/5602463/count-how-many-times-a-jbutton-is-pressed
+http://www.zentut.com/java-swing/java-swing-cardlayout/
+
+Scrollbar
+https://stackoverflow.com/questions/8849063/adding-a-scrollable-jtextarea-java/8849094#8849094
+
+
+## Beginning
+
+Game is the type of program I wanted to make for this coursework. I wanted to make a answering question game. I got the idea from a smart-phone game named 魔法使いと黒猫のウィズ(the wizard and the magical black cat). The game is originally from Japan and I am playing the Taiwanese version. It is RPG card game and you have to answer questions to kill monsters and win the game. There are many types of question in the game such as multiple choices, filling blanks, matching, true or false, and choosing words. I am thinking of making a very simple version of it. The game would just mainly answer the question and get score. I don't want to spend too much time on making up questions so I choose true and false to be the main question type of the game.
+
+## Swing
+
+I choose Swing instead of FX is mainly because I cannot run FX on my computer. I think it is because I removed JDK12 in order to use processing (group coursework). I follow the swing slides/instructions on blackboard/course site and also google some problems I encountered.
+
+The first problem I face is layout. I wanted to make a toolbar or menu on the top of the game interface. I first add the menu bar and the game function to the frame by using add() and the game function does not appear. Later, I found out that I should use getContentPane() to add more components to the frame.
+
+## ActionEvent
+
+There are not much problem until I wanted to add interations into the function. I first used button.addActionListener() but I cannot enable the game to do what I want it to do. I google many different solutions from websites and finally found out the solution I am looking for from http://www.zentut.com/java-swing/java-swing-cardlayout/. I want it to show the answer to the question and then show next question or score and finally restart a new round. At first I always use e.getsource () to detect of the button is clicked and then do actions and obviously the program is always doing silly things or giving me errors. I later found out action command useful in this game because I want many button and text change every time a button is clicked.
+
+## Tabs
+
+I later on choose to use Tabs instead of toolbar so that there won't be a lot of dialogs or pop-up window.
